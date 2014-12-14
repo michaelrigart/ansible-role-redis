@@ -1,0 +1,13 @@
+---
+
+- name: add repository
+  apt_repository:
+    repo: '{{ redis_ppa }}'
+    update_cache: yes
+
+- name: install the Redis packages
+  apt:
+    name: redis-server
+    state: present
+    update_cache: yes
+    cache_valid_time: 3600

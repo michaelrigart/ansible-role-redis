@@ -1,0 +1,15 @@
+---
+
+- include: package.yml
+  tags: package
+
+- include: configuration.yml
+  tags: configuration
+
+- name: ensure the redis service started
+  service:
+    name: redis-server
+    state: '{{ redis_service_state }}'
+    enabled: '{{ redis_service_enabled }}'
+  tags: service
+

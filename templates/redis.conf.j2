@@ -1,0 +1,9 @@
+{% for k, v in redis_conf.iteritems() %}
+{% if v is string %}
+{{ k }} {{ v }}
+{% else %}
+{% for item in v %}
+{{ k }} {{ item }}
+{% endfor %}
+{% endif %}
+{% endfor %}

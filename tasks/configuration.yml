@@ -1,0 +1,14 @@
+---
+
+- name: copy the redis configuration file
+  template:
+    src: redis.conf.j2
+    dest: /etc/redis/redis.conf
+  notify: redis_restart
+
+- name: set the kernel parameter for vm overcommit
+  sysctl:
+    name: vm.overcommit_memory
+    value: '1'
+    state: present
+  when: redis_update_kernel
