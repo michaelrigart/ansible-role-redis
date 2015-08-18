@@ -1,6 +1,6 @@
 Ansible Redis Role
 ===================
-[![Build Status](https://semaphoreci.com/api/v1/projects/088fd973-2e31-4a64-ad77-2fe575850083/461775/badge.svg)](https://semaphoreci.com/michaelrigart/ansible-role-redis) [![Build Status](https://travis-ci.org/michaelrigart/ansible-role-redis.svg?branch=master)](https://travis-ci.org/michaelrigart/ansible-role-redis)
+[![Build Status](https://semaphoreci.com/api/v1/projects/088fd973-2e31-4a64-ad77-2fe575850083/461775/badge.svg)](https://semaphoreci.com/michaelrigart/ansible-role-redis)
 
 An ansible role for installing Redis from the official Ubuntu repo or from a ppa
  
